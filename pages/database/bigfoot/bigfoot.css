@@ -1,3 +1,6 @@
+/*Thanks to Ronny Siikaluoma for the carousel code
+ https://codepen.io/siiron/pen/QWwLoMy*/
+
 @mixin aspect-ratio($width, $height) {
     position: relative;
       
@@ -19,7 +22,7 @@
     }
   }
   
-  // Styling
+  /* Styling */
   
   section {
       background: #F4F4F4;
