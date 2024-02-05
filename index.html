@@ -1,22 +1,94 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="./index.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CryptidDB</title>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+
+    
   </head>
 
   <body>
-    <header>
-      <h1>CryptidDB </h1>
-      <nav>
-        <ul>
-        <li> <a href="./pages/database/database.html"> Database</a></li>
-        <li> <a href="./pages/forum/forum.html"> Forums</a></li>
-        </ul>
-      </nav>
-    </header>
+    
+    <!-- Navbar -->
+    <div class="w3-top">
+      <div class="w3-bar w3-black w3-card">
+        <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+        <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+        <a href="./pages/database/database.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Database</a>
+        <a href="./pages/forum/forum.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Forums</a>
+
+      </div>
+    </div>
+      <!-- Automatic Slideshow Images -->
+    <div class="mySlides w3-display-container w3-center">
+      <img src="pages/database/bigfoot/bigfoot3.jpeg" style="width:100%; height: 700px;">
+      <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+        <h3>Sighting 1</h3>
+        <p><b>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste, vero?.</b></p>    
+      
+      </div>
+    </div>
+    <div class="mySlides w3-display-container w3-center">
+      <img src="pages/database/bigfoot/bigfoot1.jpeg" style="width:100%;height: 700px;">
+      <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+        <h3>Sighting 2</h3>
+        <p><b>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste, vero?.</b></p>   
+    
+      </div>
+    </div>
+    <div class="mySlides w3-display-container w3-center">
+      <img src="pages/database/bigfoot/bigfoot2.jpeg" style="width:100%;height: 700px;">
+      <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+        <h3>Sighting 3</h3>
+        <p><b>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste, vero?.</b></p>   
+      
+      </div>
+    </div>
+    <!--Automatic slideshow end-->
     <script type="module" src="/src/main.jsx"></script>
   </body>
+
+<script>
+  // Automatic Slideshow - change image every 4 seconds
+  var myIndex = 0;
+  carousel();
+  
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 4000);    
+  }
+  
+  // Used to toggle the menu on small screens when clicking on the menu button
+  function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+    } else { 
+      x.className = x.className.replace(" w3-show", "");
+    }
+  }
+  
+  // When the user clicks anywhere outside of the modal, close it
+  var modal = document.getElementById('ticketModal');
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+  </script>
 </html>
