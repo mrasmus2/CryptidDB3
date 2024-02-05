@@ -6,6 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CryptidDB - Bigfoot</title>
   </head>
+  <style>
+    /* Styles for the tooltip */
+    .tooltip {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .tooltip .tooltiptext {
+        visibility: hidden;
+        height: 200px;
+        width: 200px;
+        background-color: #555;
+        color: #fff;
+        text-align: center;
+        border-radius: 5px;
+        padding: 5px;
+        position: absolute;
+        z-index: 1;
+        top: 10px; /* Adjusted to move the tooltip above the text; increase value to push it down */
+        left: 50%;
+        margin-left: -250px; /* Center the tooltip ; decrease the value to push it left */
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+
+    .tooltip:hover .tooltiptext {
+        visibility: visible;
+        opacity: 1;
+    }
+    /*styles for the tooltip ends*/
+</style>
+
 
   <body>
     <header>
@@ -40,10 +73,14 @@
                         <div>
                             <img src="./bigfoot1.jpeg" alt="">
                         </div>
-                        <figcaption>
-                            Bigfoot spotted in a forest. Notice his signature silhouette.
-                            <span class="credit">Generated with DALL-E 3 via Microsoft Designer</span>
-                        </figcaption>
+                        <div class="tooltip">
+                            <figcaption>
+                                Bigfoot spotted in a forest. Notice his signature silhouette.
+                                <span class="credit">Generated with DALL-E 3 via Microsoft Designer</span>
+                            </figcaption>
+                            <div class="tooltiptext">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia eos voluptatem libero. Voluptate unde maxime expedita aspernatur, numquam magni eum exercitationem atque 
+                                asperiores laborum voluptates explicabo pariatur, nemo, possimus id!</div>
+                        </div>
                     </figure>
                 </li>
                 <li class="carousel__slide">
@@ -51,10 +88,14 @@
                         <div>
                             <img src="./bigfoot2.jpeg" alt="">
                         </div>
-                        <figcaption>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            <span class="credit">Generated with DALL-E 3 via Microsoft Designer</span>                            
-                        </figcaption>
+                        <div class="tooltip">
+                            <figcaption>
+                                Bigfoot spotted in a forest. Notice his signature silhouette.
+                                <span class="credit">Generated with DALL-E 3 via Microsoft Designer</span>
+                            </figcaption>
+                            <div class="tooltiptext">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia eos voluptatem libero. Voluptate unde maxime expedita aspernatur, numquam magni eum exercitationem atque 
+                                asperiores laborum voluptates explicabo pariatur, nemo, possimus id!</div>
+                        </div>
                     </figure>
                 </li>
                 <li class="carousel__slide">
@@ -62,10 +103,14 @@
                         <div>
                             <img src="./bigfoot3.jpeg" alt="">
                         </div>
-                        <figcaption>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            <span class="credit">Generated with DALL-E 3 via Microsoft Designer</span>                            
-                        </figcaption>
+                        <div class="tooltip">
+                            <figcaption>
+                                Bigfoot spotted in a forest. Notice his signature silhouette.
+                                <span class="credit">Generated with DALL-E 3 via Microsoft Designer</span>
+                            </figcaption>
+                            <div class="tooltiptext">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia eos voluptatem libero. Voluptate unde maxime expedita aspernatur, numquam magni eum exercitationem atque 
+                                asperiores laborum voluptates explicabo pariatur, nemo, possimus id!</div>
+                        </div>
                     </figure>
                 </li>
                 <li class="carousel__slide">
@@ -73,10 +118,14 @@
                         <div>
                             <img src="./bigfoot4.jpeg" alt="">
                         </div>
-                        <figcaption>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            <span class="credit">Generated with DALL-E 3 via Microsoft Designer</span>                            
-                        </figcaption>
+                        <div class="tooltip">
+                            <figcaption>
+                                Bigfoot spotted in a forest. Notice his signature silhouette.
+                                <span class="credit">Generated with DALL-E 3 via Microsoft Designer</span>
+                            </figcaption>
+                            <div class="tooltiptext">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia eos voluptatem libero. Voluptate unde maxime expedita aspernatur, numquam magni eum exercitationem atque 
+                                asperiores laborum voluptates explicabo pariatur, nemo, possimus id!</div>
+                        </div>
                     </figure>
                 </li>
                 <li class="carousel__slide">
@@ -84,10 +133,14 @@
                         <div>
                             <img src="./bigfoot5.jpeg" alt="">
                         </div>
-                        <figcaption>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            <span class="credit">Generated with DALL-E 3 via Microsoft Designer</span>                            
-                        </figcaption>
+                        <div class="tooltip">
+                            <figcaption>
+                                Bigfoot spotted in a forest. Notice his signature silhouette.
+                                <span class="credit">Generated with DALL-E 3 via Microsoft Designer</span>
+                            </figcaption>
+                            <div class="tooltiptext">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia eos voluptatem libero. Voluptate unde maxime expedita aspernatur, numquam magni eum exercitationem atque 
+                                asperiores laborum voluptates explicabo pariatur, nemo, possimus id!</div>
+                        </div>
                     </figure>
                 </li>
                 <li class="carousel__slide">
@@ -95,10 +148,14 @@
                         <div>
                             <img src="./bigfoot6.jpeg" alt="">
                         </div>
-                        <figcaption>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            <span class="credit">Generated with DALL-E 3 via Microsoft Designer</span>                            
-                        </figcaption>
+                        <div class="tooltip">
+                            <figcaption>
+                                Bigfoot spotted in a forest. Notice his signature silhouette.
+                                <span class="credit">Generated with DALL-E 3 via Microsoft Designer</span>
+                            </figcaption>
+                            <div class="tooltiptext">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia eos voluptatem libero. Voluptate unde maxime expedita aspernatur, numquam magni eum exercitationem atque 
+                                asperiores laborum voluptates explicabo pariatur, nemo, possimus id!</div>
+                        </div>
                     </figure>
                 </li>
             </ul>    
@@ -125,3 +182,18 @@
         </div>
     </div>
 </section>
+
+<script>
+    // JavaScript (optional for dynamic content)
+    // You can use this script if you want to dynamically change the tooltip content
+
+    // Get the tooltip element
+    const tooltip = document.querySelector('.tooltip');
+
+
+    // Create the tooltip text element
+    const tooltipTextElement = document.createElement('div');
+    tooltipTextElement.classList.add('tooltiptext');
+    tooltipTextElement.textContent = tooltipText
+    tooltip.appendChild(tooltipTextElement);
+</script>
