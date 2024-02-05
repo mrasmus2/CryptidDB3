@@ -67,7 +67,7 @@
       }
   }
   
-  .carousel__slides {
+  .carousel__slides{
       position: relative;
       z-index: 1;
       padding: 0;

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="CryptidDB/pages/database/bigfoot/bigfoot.css" />
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+    <div class="w3-bar w3-black w3-card">
+      <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+      <a href="./pages/database/database.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Database</a>
+      <a href="./pages/forum/forum.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Forums</a>
+
+    </div>
+  </div>
+
+
+<!-- Page content -->
+<div class="w3-content" style="height:900px;margin-top:46px">
+
+  <!-- The Carousal Section -->
+  <!--<div class="w3-bar w3-black w3-card">
+        <div class="w3-third w3-margin-bottom">
+          <img src="/w3images/newyork.jpg" alt="New York" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>New York</b></p>
+            <p class="w3-opacity">Fri 27 Nov 2016</p>
+            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
+          </div>
+        </div>
+    </div>-->
+    <section>
+        <div class="container">
+            <div class="carousel">
+                <input type="radio" name="slides" checked="checked" id="slide-1">
+                <input type="radio" name="slides" id="slide-2">
+                <input type="radio" name="slides" id="slide-3">
+                <input type="radio" name="slides" id="slide-4">
+                <input type="radio" name="slides" id="slide-5">
+                <input type="radio" name="slides" id="slide-6">
+                <ul class="carousel__slides">
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img src="./bigfoot1.jpeg" alt="">
+                            </div>
+                            <div class="tooltip">
+                                <figcaption>
+                                    Bigfoot spotted in a forest. Notice his signature silhouette.
+                                    <span class="credit">Generated with DALL-E 3 via Microsoft Designer</span>
+                                </figcaption>
+                                <div class="tooltiptext">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia eos voluptatem libero. Voluptate unde maxime expedita aspernatur, numquam magni eum exercitationem atque 
+                                    asperiores laborum voluptates explicabo pariatur, nemo, possimus id!</div>
+                            </div>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img src="./bigfoot2.jpeg" alt="">
+                            </div>
+                            <div class="tooltip">
+                                <figcaption>
+                                    Bigfoot spotted in a forest. Notice his signature silhouette.
+                                    <span class="credit">Generated with DALL-E 3 via Microsoft Designer</span>
+                                </figcaption>
+                                <div class="tooltiptext">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia eos voluptatem libero. Voluptate unde maxime expedita aspernatur, numquam magni eum exercitationem atque 
+                                    asperiores laborum voluptates explicabo pariatur, nemo, possimus id!</div>
+                            </div>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img src="./bigfoot3.jpeg" alt="">
+                            </div>
+                            <div class="tooltip">
+                                <figcaption>
+                                    Bigfoot spotted in a forest. Notice his signature silhouette.
+                                    <span class="credit">Generated with DALL-E 3 via Microsoft Designer</span>
+                                </figcaption>
+                                <div class="tooltiptext">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia eos voluptatem libero. Voluptate unde maxime expedita aspernatur, numquam magni eum exercitationem atque 
+                                    asperiores laborum voluptates explicabo pariatur, nemo, possimus id!</div>
+                            </div>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img src="./bigfoot4.jpeg" alt="">
+                            </div>
+                            <div class="tooltip">
+                                <figcaption>
+                                    Bigfoot spotted in a forest. Notice his signature silhouette.
+                                    <span class="credit">Generated with DALL-E 3 via Microsoft Designer</span>
+                                </figcaption>
+                                <div class="tooltiptext">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia eos voluptatem libero. Voluptate unde maxime expedita aspernatur, numquam magni eum exercitationem atque 
+                                    asperiores laborum voluptates explicabo pariatur, nemo, possimus id!</div>
+                            </div>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img src="./bigfoot5.jpeg" alt="">
+                            </div>
+                            <div class="tooltip">
+                                <figcaption>
+                                    Bigfoot spotted in a forest. Notice his signature silhouette.
+                                    <span class="credit">Generated with DALL-E 3 via Microsoft Designer</span>
+                                </figcaption>
+                                <div class="tooltiptext">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia eos voluptatem libero. Voluptate unde maxime expedita aspernatur, numquam magni eum exercitationem atque 
+                                    asperiores laborum voluptates explicabo pariatur, nemo, possimus id!</div>
+                            </div>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img src="./bigfoot6.jpeg" alt="">
+                            </div>
+                            <div class="tooltip">
+                                <figcaption>
+                                    Bigfoot spotted in a forest. Notice his signature silhouette.
+                                    <span class="credit">Generated with DALL-E 3 via Microsoft Designer</span>
+                                </figcaption>
+                                <div class="tooltiptext">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia eos voluptatem libero. Voluptate unde maxime expedita aspernatur, numquam magni eum exercitationem atque 
+                                    asperiores laborum voluptates explicabo pariatur, nemo, possimus id!</div>
+                            </div>
+                        </figure>
+                    </li>
+                </ul>    
+                <ul class="carousel__thumbnails">
+                    <li>
+                        <label for="slide-1"><img src="./bigfoot1.jpeg" alt=""></label>
+                    </li>
+                    <li>
+                        <label for="slide-2"><img src="./bigfoot2.jpeg" alt=""></label>
+                    </li>
+                    <li>
+                        <label for="slide-3"><img src="./bigfoot3.jpeg" alt=""></label>
+                    </li>
+                    <li>
+                        <label for="slide-4"><img src="./bigfoot4.jpeg" alt=""></label>
+                    </li>
+                    <li>
+                        <label for="slide-5"><img src="./bigfoot5.jpeg" alt=""></label>
+                    </li>
+                    <li>
+                        <label for="slide-6"><img src="./bigfoot6.jpeg" alt=""></label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    
+  </div>
+</div>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+    // JavaScript (optional for dynamic content)
+    // You can use this script if you want to dynamically change the tooltip content
+
+    // Get the tooltip element
+    const tooltip = document.querySelector('.tooltip');
+
+
+    // Create the tooltip text element
+    const tooltipTextElement = document.createElement('div');
+    tooltipTextElement.classList.add('tooltiptext');
+    tooltipTextElement.textContent = tooltipText
+    tooltip.appendChild(tooltipTextElement);
+</script>
+</body>
+</html>
