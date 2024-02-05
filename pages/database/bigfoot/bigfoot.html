@@ -1,199 +1,162 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="./bigfoot.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CryptidDB - Bigfoot</title>
-  </head>
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <title>CryptidDB - Bigfoot</title>
   <style>
-    /* Styles for the tooltip */
-    .tooltip {
-        position: relative;
-        display: inline-block;
-        cursor: pointer;
+    .image-container {
+      position: relative;
     }
 
-    .tooltip .tooltiptext {
-        visibility: hidden;
-        height: 200px;
-        width: 200px;
-        background-color: #555;
-        color: #fff;
-        text-align: center;
-        border-radius: 5px;
-        padding: 5px;
-        position: absolute;
-        z-index: 1;
-        top: 10px; /* Adjusted to move the tooltip above the text; increase value to push it down */
-        left: 50%;
-        margin-left: -250px; /* Center the tooltip ; decrease the value to push it left */
-        opacity: 0;
-        transition: opacity 0.3s;
+    .overlay {
+      position: absolute;
+      bottom: 60px; /* Adjust the distance from the bottom as needed */
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80%; /* Adjust the width as needed */
+      background-color: rgba(255, 255, 255, 0.7); /* Transparent white background */
+      padding: 15px;
+      text-align: center;
+      border-radius: 15px; /* Adjust the border-radius as needed */
     }
 
-    .tooltip:hover .tooltiptext {
-        visibility: visible;
-        opacity: 1;
+    .info-button {
+      border-radius: 50%;
+      padding: 5px;
+      font-size: 12px;
+      background-color: #337ab7; /* Bootstrap primary color, you can change it */
+      color: #fff;
+      cursor: pointer;
+      body {font-family: "Lato", sans-serif}
+    .mySlides {display: none}
     }
-    /*styles for the tooltip ends*/
-</style>
-
-
-  <body>
-    <header>
-      <h1><a href="/CryptidDB"> CryptidDB</a> </h1>
-      <nav>
-        <ul>
-        <li> <a href="/CryptidDB/pages/database/database.html"> Database</a></li>
-        <li> <a href="/CryptidDB/pages/forum/forum.html"> Forums</a></li>
-        </ul>
-      </nav>
-    </header>
-  </body>
-</html>
-
-
-
-
-<!-- Thanks to Ronny Siikaluoma for the carousel code
- https://codepen.io/siiron/pen/QWwLoMy-->
-<section>
-    <div class="container">
-        <div class="carousel">
-            <input type="radio" name="slides" checked="checked" id="slide-1">
-            <input type="radio" name="slides" id="slide-2">
-            <input type="radio" name="slides" id="slide-3">
-            <input type="radio" name="slides" id="slide-4">
-            <input type="radio" name="slides" id="slide-5">
-            <input type="radio" name="slides" id="slide-6">
-            <ul class="carousel__slides">
-                <li class="carousel__slide">
-                    <figure>
-                        <div>
-                            <img src="./bigfoot1.jpeg" alt="">
-                        </div>
-                        <div class="tooltip">
-                            <figcaption>
-                                Bigfoot spotted in a forest. Notice his signature silhouette.
-                                <span class="credit">Generated with DALL-E 3 via Microsoft Designer</span>
-                            </figcaption>
-                            <div class="tooltiptext">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia eos voluptatem libero. Voluptate unde maxime expedita aspernatur, numquam magni eum exercitationem atque 
-                                asperiores laborum voluptates explicabo pariatur, nemo, possimus id!</div>
-                        </div>
-                    </figure>
-                </li>
-                <li class="carousel__slide">
-                    <figure>
-                        <div>
-                            <img src="./bigfoot2.jpeg" alt="">
-                        </div>
-                        <div class="tooltip">
-                            <figcaption>
-                                Bigfoot spotted in a forest. Notice his signature silhouette.
-                                <span class="credit">Generated with DALL-E 3 via Microsoft Designer</span>
-                            </figcaption>
-                            <div class="tooltiptext">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia eos voluptatem libero. Voluptate unde maxime expedita aspernatur, numquam magni eum exercitationem atque 
-                                asperiores laborum voluptates explicabo pariatur, nemo, possimus id!</div>
-                        </div>
-                    </figure>
-                </li>
-                <li class="carousel__slide">
-                    <figure>
-                        <div>
-                            <img src="./bigfoot3.jpeg" alt="">
-                        </div>
-                        <div class="tooltip">
-                            <figcaption>
-                                Bigfoot spotted in a forest. Notice his signature silhouette.
-                                <span class="credit">Generated with DALL-E 3 via Microsoft Designer</span>
-                            </figcaption>
-                            <div class="tooltiptext">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia eos voluptatem libero. Voluptate unde maxime expedita aspernatur, numquam magni eum exercitationem atque 
-                                asperiores laborum voluptates explicabo pariatur, nemo, possimus id!</div>
-                        </div>
-                    </figure>
-                </li>
-                <li class="carousel__slide">
-                    <figure>
-                        <div>
-                            <img src="./bigfoot4.jpeg" alt="">
-                        </div>
-                        <div class="tooltip">
-                            <figcaption>
-                                Bigfoot spotted in a forest. Notice his signature silhouette.
-                                <span class="credit">Generated with DALL-E 3 via Microsoft Designer</span>
-                            </figcaption>
-                            <div class="tooltiptext">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia eos voluptatem libero. Voluptate unde maxime expedita aspernatur, numquam magni eum exercitationem atque 
-                                asperiores laborum voluptates explicabo pariatur, nemo, possimus id!</div>
-                        </div>
-                    </figure>
-                </li>
-                <li class="carousel__slide">
-                    <figure>
-                        <div>
-                            <img src="./bigfoot5.jpeg" alt="">
-                        </div>
-                        <div class="tooltip">
-                            <figcaption>
-                                Bigfoot spotted in a forest. Notice his signature silhouette.
-                                <span class="credit">Generated with DALL-E 3 via Microsoft Designer</span>
-                            </figcaption>
-                            <div class="tooltiptext">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia eos voluptatem libero. Voluptate unde maxime expedita aspernatur, numquam magni eum exercitationem atque 
-                                asperiores laborum voluptates explicabo pariatur, nemo, possimus id!</div>
-                        </div>
-                    </figure>
-                </li>
-                <li class="carousel__slide">
-                    <figure>
-                        <div>
-                            <img src="./bigfoot6.jpeg" alt="">
-                        </div>
-                        <div class="tooltip">
-                            <figcaption>
-                                Bigfoot spotted in a forest. Notice his signature silhouette.
-                                <span class="credit">Generated with DALL-E 3 via Microsoft Designer</span>
-                            </figcaption>
-                            <div class="tooltiptext">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia eos voluptatem libero. Voluptate unde maxime expedita aspernatur, numquam magni eum exercitationem atque 
-                                asperiores laborum voluptates explicabo pariatur, nemo, possimus id!</div>
-                        </div>
-                    </figure>
-                </li>
-            </ul>    
-            <ul class="carousel__thumbnails">
-                <li>
-                    <label for="slide-1"><img src="./bigfoot1.jpeg" alt=""></label>
-                </li>
-                <li>
-                    <label for="slide-2"><img src="./bigfoot2.jpeg" alt=""></label>
-                </li>
-                <li>
-                    <label for="slide-3"><img src="./bigfoot3.jpeg" alt=""></label>
-                </li>
-                <li>
-                    <label for="slide-4"><img src="./bigfoot4.jpeg" alt=""></label>
-                </li>
-                <li>
-                    <label for="slide-5"><img src="./bigfoot5.jpeg" alt=""></label>
-                </li>
-                <li>
-                    <label for="slide-6"><img src="./bigfoot6.jpeg" alt=""></label>
-                </li>
-            </ul>
+  </style>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+      </head>
+    
+      <body>
+        
+        <!-- Navbar -->
+        <div class="w3-top">
+          <div class="w3-bar w3-black w3-card">
+            <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+            <a href="../../../index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+            <a href="../../database/database.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Database</a>
+            <a href="./pages/forum/forum.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Forums</a>
+    
+          </div>
         </div>
+<div class="container">
+    
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <div class="image-container">
+          <img src="./bigfoot1.jpeg" alt="Bigfoot 1" style="width:100%; height:600px">
+          <div class="overlay">
+            <p>Bigfoot spotted in a forest. Notice his signature silhouette. Generated with DALL-E 3 via Microsoft Designer</p>
+            <button class="info-button" data-toggle="tooltip" data-placement="top" title="More Information">
+              <span class="glyphicon glyphicon-info-sign"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="image-container">
+          <img src="./bigfoot2.jpeg" alt="Bigfoot 2" style="width:100%; height:600px">
+          <div class="overlay">
+            <p>Bigfoot spotted in a forest. Notice his signature silhouette. Generated with DALL-E 3 via Microsoft Designer</p>
+            <button class="info-button" data-toggle="tooltip" data-placement="top" title="More Information">
+              <span class="glyphicon glyphicon-info-sign"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="image-container">
+          <img src="./bigfoot3.jpeg" alt="Bigfoot 3" style="width:100%; height:600px">
+          <div class="overlay">
+            <p>Bigfoot spotted in a forest. Notice his signature silhouette. Generated with DALL-E 3 via Microsoft Designer</p>
+            <button class="info-button" data-toggle="tooltip" data-placement="top" title="More Information">
+              <span class="glyphicon glyphicon-info-sign"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="image-container">
+          <img src="./bigfoot4.jpeg" alt="Bigfoot 4" style="width:100%; height:600px">
+          <div class="overlay">
+            <p>Bigfoot spotted in a forest. Notice his signature silhouette. Generated with DALL-E 3 via Microsoft Designer</p>
+            <button class="info-button" data-toggle="tooltip" data-placement="top" title="More Information">
+              <span class="glyphicon glyphicon-info-sign"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="image-container">
+          <img src="./bigfoot5.jpeg" alt="Bigfoot 2" style="width:100%; height:600px">
+          <div class="overlay">
+            <p>Bigfoot spotted in a forest. Notice his signature silhouette. Generated with DALL-E 3 via Microsoft Designer</p>
+            <button class="info-button" data-toggle="tooltip" data-placement="top" title="More Information">
+              <span class="glyphicon glyphicon-info-sign"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="image-container">
+          <img src="./bigfoot6.jpeg" alt="Bigfoot 2" style="width:100%; height:600px">
+          <div class="overlay">
+            <p>Bigfoot spotted in a forest. Notice his signature silhouette. Generated with DALL-E 3 via Microsoft Designer</p>
+            <button class="info-button" data-toggle="tooltip" data-placement="top" title="More Information">
+              <span class="glyphicon glyphicon-info-sign"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+     
     </div>
-</section>
+
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
+      <li data-target="#myCarousel" data-slide-to="5"></li>
+      <li data-target="#myCarousel" data-slide-to="6"></li>
+      
+    </ol>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
 
 <script>
-    // JavaScript (optional for dynamic content)
-    // You can use this script if you want to dynamically change the tooltip content
-
-    // Get the tooltip element
-    const tooltip = document.querySelector('.tooltip');
-
-
-    // Create the tooltip text element
-    const tooltipTextElement = document.createElement('div');
-    tooltipTextElement.classList.add('tooltiptext');
-    tooltipTextElement.textContent = tooltipText
-    tooltip.appendChild(tooltipTextElement);
+  $(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+  });
 </script>
+
+</body>
+</html>
