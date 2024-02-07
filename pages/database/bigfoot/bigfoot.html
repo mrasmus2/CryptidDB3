@@ -1,16 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>CryptidDB - Bigfoot</title>
+  <title>Bootstrap Example</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <title>CryptidDB - Bigfoot</title>
   <style>
     .image-container {
       position: relative;
     }
+    .btn-circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  box-shadow: none;
+}
+.like-button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: none;
+  background-color: lightblue; /* Set the initial background color */
+  box-shadow: none;
+  transition: background-color 0.3s ease; /* Add a smooth transition effect */
+}
+
+.like-button.clicked {
+  background-color: red; /* Set the background color when clicked */
+}
 
     .overlay {
       position: absolute;
@@ -23,17 +53,28 @@
       text-align: center;
       border-radius: 15px; /* Adjust the border-radius as needed */
     }
-
     .info-button {
-      border-radius: 50%;
-      padding: 5px;
-      font-size: 12px;
-      background-color: #337ab7; /* Bootstrap primary color, you can change it */
-      color: #fff;
-      cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: none;
+  background-color: lightblue; /* Set the initial background color */
+  box-shadow: none;
+  transition: background-color 0.3s ease; /* Add a smooth transition effect */
+}
+
+.info-button.clicked {
+  background-color: red; /* Set the background color when clicked */
+}
+
+    
       body {font-family: "Lato", sans-serif}
     .mySlides {display: none}
-    }
+    
   </style>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
@@ -48,8 +89,8 @@
           <div class="w3-bar w3-black w3-card">
             <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
             <a href="../../../index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
-            <a href="../database.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Database</a>
-            <a href="../../forum/forum.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Forums</a>
+            <a href="../../database/database.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Database</a>
+            <a href="./pages/forum/forum.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Forums</a>
     
           </div>
         </div>
@@ -62,11 +103,19 @@
         <div class="image-container">
           <img src="./bigfoot1.jpeg" alt="Bigfoot 1" style="width:100%; height:600px">
           <div class="overlay">
-            <p>Bigfoot spotted in a forest. Notice his signature silhouette. Generated with DALL-E 3 via Microsoft Designer</p>
-            <button class="info-button" data-toggle="tooltip" data-placement="top" title="More Information">
-              <span class="glyphicon glyphicon-info-sign"></span>
-            </button>
-          </div>
+    <p>Bigfoot spotted in a forest. Notice his signature silhouette. Generated with DALL-E 3 via Microsoft Designer</p>
+
+    <div class="button-container">
+        <button class="btn btn-default btn-circle info-button" data-toggle="tooltip" data-placement="top" title="More Information">
+            <span class="glyphicon glyphicon-info-sign"></span>
+        </button>
+
+        <button type="button" class="btn btn-default btn-circle like-button">
+            <span class="glyphicon glyphicon-thumbs-up"></span>
+        </button>
+    </div>
+</div>
+
         </div>
       </div>
       <div class="item">
@@ -74,10 +123,18 @@
           <img src="./bigfoot2.jpeg" alt="Bigfoot 2" style="width:100%; height:600px">
           <div class="overlay">
             <p>Bigfoot spotted in a forest. Notice his signature silhouette. Generated with DALL-E 3 via Microsoft Designer</p>
-            <button class="info-button" data-toggle="tooltip" data-placement="top" title="More Information">
-              <span class="glyphicon glyphicon-info-sign"></span>
-            </button>
-          </div>
+        
+            <div class="button-container">
+                <button class="btn btn-default btn-circle info-button" data-toggle="tooltip" data-placement="top" title="More Information">
+                    <span class="glyphicon glyphicon-info-sign"></span>
+                </button>
+        
+                <button type="button" class="btn btn-default btn-circle like-button">
+                    <span class="glyphicon glyphicon-thumbs-up"></span>
+                </button>
+            </div>
+        </div>
+        
         </div>
       </div>
       <div class="item">
@@ -85,10 +142,18 @@
           <img src="./bigfoot3.jpeg" alt="Bigfoot 3" style="width:100%; height:600px">
           <div class="overlay">
             <p>Bigfoot spotted in a forest. Notice his signature silhouette. Generated with DALL-E 3 via Microsoft Designer</p>
-            <button class="info-button" data-toggle="tooltip" data-placement="top" title="More Information">
-              <span class="glyphicon glyphicon-info-sign"></span>
-            </button>
-          </div>
+        
+            <div class="button-container">
+                <button class="btn btn-default btn-circle info-button" data-toggle="tooltip" data-placement="top" title="More Information">
+                    <span class="glyphicon glyphicon-info-sign"></span>
+                </button>
+        
+                <button type="button" class="btn btn-default btn-circle like-button">
+                    <span class="glyphicon glyphicon-thumbs-up"></span>
+                </button>
+            </div>
+        </div>
+        
         </div>
       </div>
       <div class="item">
@@ -96,10 +161,18 @@
           <img src="./bigfoot4.jpeg" alt="Bigfoot 4" style="width:100%; height:600px">
           <div class="overlay">
             <p>Bigfoot spotted in a forest. Notice his signature silhouette. Generated with DALL-E 3 via Microsoft Designer</p>
-            <button class="info-button" data-toggle="tooltip" data-placement="top" title="More Information">
-              <span class="glyphicon glyphicon-info-sign"></span>
-            </button>
-          </div>
+        
+            <div class="button-container">
+                <button class="btn btn-default btn-circle info-button" data-toggle="tooltip" data-placement="top" title="More Information">
+                    <span class="glyphicon glyphicon-info-sign"></span>
+                </button>
+        
+                <button type="button" class="btn btn-default btn-circle like-button">
+                    <span class="glyphicon glyphicon-thumbs-up"></span>
+                </button>
+            </div>
+        </div>
+        
         </div>
       </div>
       <div class="item">
@@ -107,10 +180,18 @@
           <img src="./bigfoot5.jpeg" alt="Bigfoot 2" style="width:100%; height:600px">
           <div class="overlay">
             <p>Bigfoot spotted in a forest. Notice his signature silhouette. Generated with DALL-E 3 via Microsoft Designer</p>
-            <button class="info-button" data-toggle="tooltip" data-placement="top" title="More Information">
-              <span class="glyphicon glyphicon-info-sign"></span>
-            </button>
-          </div>
+        
+            <div class="button-container">
+                <button class="btn btn-default btn-circle info-button" data-toggle="tooltip" data-placement="top" title="More Information">
+                    <span class="glyphicon glyphicon-info-sign"></span>
+                </button>
+        
+                <button type="button" class="btn btn-default btn-circle like-button">
+                    <span class="glyphicon glyphicon-thumbs-up"></span>
+                </button>
+            </div>
+        </div>
+        
         </div>
       </div>
       <div class="item">
@@ -118,10 +199,18 @@
           <img src="./bigfoot6.jpeg" alt="Bigfoot 2" style="width:100%; height:600px">
           <div class="overlay">
             <p>Bigfoot spotted in a forest. Notice his signature silhouette. Generated with DALL-E 3 via Microsoft Designer</p>
-            <button class="info-button" data-toggle="tooltip" data-placement="top" title="More Information">
-              <span class="glyphicon glyphicon-info-sign"></span>
-            </button>
-          </div>
+        
+            <div class="button-container">
+                <button class="btn btn-default btn-circle info-button" data-toggle="tooltip" data-placement="top" title="More Information">
+                    <span class="glyphicon glyphicon-info-sign"></span>
+                </button>
+        
+                <button type="button" class="btn btn-default btn-circle like-button">
+                    <span class="glyphicon glyphicon-thumbs-up"></span>
+                </button>
+            </div>
+        </div>
+        
         </div>
       </div>
      
