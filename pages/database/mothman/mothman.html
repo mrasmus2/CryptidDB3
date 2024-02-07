@@ -11,7 +11,35 @@
     .image-container {
       position: relative;
     }
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  box-shadow: none;
+}
+.like-button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: none;
+  background-color: lightblue; /* Set the initial background color */
+  box-shadow: none;
+  transition: background-color 0.3s ease; /* Add a smooth transition effect */
+}
 
+.like-button.clicked {
+  background-color: red; /* Set the background color when clicked */
+}
     .overlay {
       position: absolute;
       bottom: 60px; /* Adjust the distance from the bottom as needed */
@@ -25,15 +53,25 @@
     }
 
     .info-button {
-      border-radius: 50%;
-      padding: 5px;
-      font-size: 12px;
-      background-color: #337ab7; /* Bootstrap primary color, you can change it */
-      color: #fff;
-      cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: none;
+  background-color: lightblue; /* Set the initial background color */
+  box-shadow: none;
+  transition: background-color 0.3s ease; /* Add a smooth transition effect */
+}
+
+.info-button.clicked {
+  background-color: red; /* Set the background color when clicked */
+}
       body {font-family: "Lato", sans-serif}
     .mySlides {display: none}
-    }
+    
   </style>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
