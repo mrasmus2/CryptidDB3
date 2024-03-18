@@ -1,77 +1,118 @@
-
 <!DOCTYPE html>
 <html>
-<head>
-<title>CryptidDB - Database</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
-</style>
+  <head>
+    <title>CryptidDB - Database</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Raleway"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      body,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Raleway", sans-serif;
+      }
+    </style>
 
-
-
-<link rel="stylesheet" href="database.css">
-<style>
-body {font-family: "Lato", sans-serif}
-.mySlides {display: none}
-</style>
-
-    
+    <link rel="stylesheet" href="database.css" />
+    <style>
+      body {
+        font-family: "Lato", sans-serif;
+      }
+      .mySlides {
+        display: none;
+      }
+    </style>
   </head>
 
   <body>
-    
     <!-- Navbar -->
     <div class="w3-top">
       <div class="w3-bar w3-black w3-card">
-        <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-        <a href="../../index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
-        <a href="./database.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Database</a>
-        <a href="../forum/forum.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Forums</a>
+        <a
+          class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right"
+          href="javascript:void(0)"
+          onclick="myFunction()"
+          title="Toggle Navigation Menu"
+          ><i class="fa fa-bars"></i
+        ></a>
+        <a
+          href="../../index.html"
+          class="w3-bar-item w3-button w3-padding-large"
+          >HOME</a
+        >
+        <a
+          href="./database.html"
+          class="w3-bar-item w3-button w3-padding-large w3-hide-small"
+          >Database</a
+        >
+        <a
+          href="../forum/forum.html"
+          class="w3-bar-item w3-button w3-padding-large w3-hide-small"
+          >Forums</a
+        >
       </div>
     </div>
 
-<!-- !PAGE CONTENT! -->
-<div class="grid">
-  <div class="grid__item">
-    <div class="card"><img class="card__img" src="bigfoot/bigfoot0.jpeg" >
-      <div class="card__content">
-        <h1 class="card__header">Bigfoot</h1>
-        <p class="card__text">Look up at the night sky, and find yourself <strong>immersed</strong> in the amazing mountain range of Aspen. </p>
-        <a href="./bigfoot/bigfoot.html" class="card__btn">Explore <span>&rarr;</span></a>
+    <!-- !PAGE CONTENT! -->
+    <div class="grid">
+      <div class="grid__item">
+        <div class="card">
+          <img class="card__img" src="bigfoot/bigfoot0.jpeg" />
+          <div class="card__content">
+            <h1 class="card__header">Bigfoot</h1>
+            <p class="card__text">
+              Mothman, a cryptid with large wings and glowing eyes, has been
+              sporadically sighted in Point Pleasant, West Virginia, sparking
+              curiosity and speculation about its origins and intentions.
+            </p>
+            <a href="./bigfoot/bigfoot.html" class="card__btn"
+              >Explore <span>&rarr;</span></a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="grid__item">
+        <div class="card">
+          <img class="card__img" src="mothman/mothman0.jpeg" />
+          <div class="card__content">
+            <h1 class="card__header">Mothman</h1>
+            <p class="card__text">
+              Mothman, a cryptid with large wings and glowing eyes, has been
+              sporadically sighted in Point Pleasant, West Virginia, sparking
+              curiosity and speculation about its origins and intentions.
+            </p>
+            <a href="./mothman/mothman.html" class="card__btn"
+              >Explore <span>&rarr;</span></a
+            >
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-  
-  <div class="grid__item">
-    <div class="card"><img class="card__img" src="mothman/mothman0.jpeg" >
-      <div class="card__content">
-        <h1 class="card__header">Mothman</h1>
-        <p class="card__text">Sunsets over the <strong>stunning</strong> Utah Canyonlands, is truly something much more than incredible.</p>
-        <a href="./mothman/mothman.html" class="card__btn">Explore <span>&rarr;</span></a>
-      </div>
-    </div>
-  </div>
-</div>
 
-<script>
-// Script to open and close sidebar
-function w3_open() {
-    document.getElementById("mySidebar").style.display = "block";
-    document.getElementById("myOverlay").style.display = "block";
-}
- 
-function w3_close() {
-    document.getElementById("mySidebar").style.display = "none";
-    document.getElementById("myOverlay").style.display = "none";
-}
-</script>
+    <script>
+      // Script to open and close sidebar
+      function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+        document.getElementById("myOverlay").style.display = "block";
+      }
 
-</body>
+      function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+        document.getElementById("myOverlay").style.display = "none";
+      }
+    </script>
+  </body>
 </html>
-
- 
