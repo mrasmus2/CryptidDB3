@@ -95,3 +95,7 @@ body {
 .card__btn:hover span, .card__btn:active span {
   margin-left: 1.5rem;
 }
+.card__img:hover,
+.card__content:hover {
+  cursor: default;
+}
