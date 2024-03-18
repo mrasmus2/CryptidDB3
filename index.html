@@ -1,94 +1,279 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <title>CryptidDB</title>
-    <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body {font-family: "Lato", sans-serif}
-.mySlides {display: none}
-</style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lato"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      body {
+        font-family: "Lato", sans-serif;
+        background-color: #101010;
+        color: #fff;
+      }
 
-    
+      .mySlides {
+        display: none;
+      }
+      .slide-content {
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 20px;
+        border-radius: 10px;
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+      }
+
+      .container {
+        padding: 20px;
+        max-width: 800px;
+        margin: 0 auto;
+        background-color: #333;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      }
+
+      .container h1,
+      .container h2,
+      .container h3,
+      .container h4,
+      .container h5,
+      .container h6 {
+        color: #fff;
+      }
+
+      .container p,
+      .container ol,
+      .container ul {
+        color: #ddd;
+      }
+    </style>
   </head>
 
   <body>
-    
     <!-- Navbar -->
     <div class="w3-top">
       <div class="w3-bar w3-black w3-card">
-        <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+        <a
+          class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right"
+          href="javascript:void(0)"
+          onclick="myFunction()"
+          title="Toggle Navigation Menu"
+          ><i class="fa fa-bars"></i
+        ></a>
         <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
-        <a href="./pages/database/database.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Database</a>
-        <a href="./pages/forum/forum.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Forums</a>
+        <a
+          href="./pages/database/database.html"
+          class="w3-bar-item w3-button w3-padding-large w3-hide-small"
+          >Database</a
+        >
+        <a
+          href="./pages/forum/forum.html"
+          class="w3-bar-item w3-button w3-padding-large w3-hide-small"
+          >Forums</a
+        >
+      </div>
+    </div>
 
+    <!-- Automatic Slideshow Images -->
+    <div class="mySlides w3-display-container w3-center">
+      <img
+        src="pages/database/mothman/mothman0.jpeg"
+        style="width: 100%; height: 700px"
+      />
+      <div
+        class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small"
+      >
+        <div class="slide-content">
+          <h3>Mothman</h3>
+          <p>
+            <b
+              >Mothman, a cryptid with large wings and glowing eyes, has been
+              sporadically sighted in Point Pleasant, West Virginia, sparking
+              curiosity and speculation about its origins and intentions.</b
+            >
+          </p>
+        </div>
       </div>
     </div>
-      <!-- Automatic Slideshow Images -->
     <div class="mySlides w3-display-container w3-center">
-      <img src="pages/database/bigfoot/bigfoot3.jpeg" style="width:100%; height: 700px;">
-      <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-        <h3>Sighting 1</h3>
-        <p><b>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste, vero?.</b></p>    
-      
+      <img src="./Chupacabra.jpeg" style="width: 100%; height: 700px" />
+      <div
+        class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small"
+      >
+        <div class="slide-content">
+          <h3>Chupacabra</h3>
+          <p>
+            <b
+              >The Chupacabra, a cryptid of Latin American legend, instills fear
+              with its mysterious attacks on livestock, leaving behind a trail
+              of drained carcasses and baffled communities.</b
+            >
+          </p>
+        </div>
       </div>
     </div>
     <div class="mySlides w3-display-container w3-center">
-      <img src="pages/database/bigfoot/bigfoot1.jpeg" style="width:100%;height: 700px;">
-      <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-        <h3>Sighting 2</h3>
-        <p><b>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste, vero?.</b></p>   
-    
+      <img
+        src="pages/database/bigfoot/bigfoot2.jpeg"
+        style="width: 100%; height: 700px"
+      />
+      <div
+        class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small"
+      >
+        <div class="slide-content">
+          <h3>Bigfoot</h3>
+          <p>
+            <b
+              >Bigfoot, a legendary and elusive creature of North American
+              folklore, continues to capture the imagination of enthusiasts
+              worldwide with sporadic sightings and ambiguous evidence.</b
+            >
+          </p>
+        </div>
       </div>
     </div>
     <div class="mySlides w3-display-container w3-center">
-      <img src="pages/database/bigfoot/bigfoot2.jpeg" style="width:100%;height: 700px;">
-      <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-        <h3>Sighting 3</h3>
-        <p><b>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste, vero?.</b></p>   
-      
+      <img src="./Ogopogo.jpeg" style="width: 100%; height: 700px" />
+      <div
+        class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small"
+      >
+        <div class="slide-content">
+          <h3>Ogopogo</h3>
+          <p>
+            <b
+              >Ogopogo, a famed Canadian lake monster, is rumored to dwell in
+              the depths of British Columbia's Lake Okanagan, its existence
+              fueling tales of a serpent-like creature glimpsed beneath the
+              water's surface.</b
+            >
+          </p>
+        </div>
       </div>
     </div>
     <!--Automatic slideshow end-->
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
 
-<script>
-  // Automatic Slideshow - change image every 4 seconds
-  var myIndex = 0;
-  carousel();
-  
-  function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";  
-    }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}    
-    x[myIndex-1].style.display = "block";  
-    setTimeout(carousel, 4000);    
-  }
-  
-  // Used to toggle the menu on small screens when clicking on the menu button
-  function myFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-      x.className += " w3-show";
-    } else { 
-      x.className = x.className.replace(" w3-show", "");
-    }
-  }
-  
-  // When the user clicks anywhere outside of the modal, close it
-  var modal = document.getElementById('ticketModal');
-  window.onclick = function(event) {
-    if (event.target == modal) {
-      modal.style.display = "none";
-    }
-  }
-  </script>
+    <div class="container">
+      <div>
+        <h1>Welcome to Cryptid Sightings</h1>
+        <p>
+          At Cryptid Sightings, we delve into the mysterious world of cryptids –
+          creatures whose existence is often debated, yet are reported in
+          sightings, folklore, and legends across the globe. Our platform serves
+          as a hub for enthusiasts, researchers, and curious minds alike, aiming
+          to explore, discuss, and analyze the fascinating realm of cryptids.
+        </p>
+
+        <h2>Mission Statement</h2>
+        <p>
+          Our mission at Cryptid Sightings is to provide a comprehensive and
+          objective platform for the study and discussion of cryptids. We aim
+          to:
+        </p>
+        <ol>
+          <li>
+            Educate: We strive to educate the public about various cryptids,
+            their alleged sightings, and the cultural significance surrounding
+            them.
+          </li>
+          <li>
+            Research: We facilitate research into cryptids through the
+            collection and analysis of reported sightings, eyewitness accounts,
+            and scientific investigations.
+          </li>
+          <li>
+            Community: We foster a vibrant community of cryptid enthusiasts,
+            researchers, and skeptics to engage in respectful dialogue, share
+            knowledge, and exchange ideas.
+          </li>
+        </ol>
+
+        <h2>What We Offer</h2>
+        <ol>
+          <li>
+            <strong>Sighting Database:</strong> Explore our extensive database
+            of reported cryptid sightings from around the world. From Bigfoot to
+            the Loch Ness Monster, delve into the details of these intriguing
+            encounters.
+          </li>
+          <li>
+            <strong>Articles and Analysis:</strong> Dive into our curated
+            articles and analyses, where we examine the evidence, theories, and
+            controversies surrounding various cryptids.
+          </li>
+          <li>
+            <strong>Discussion Forums:</strong> Engage with fellow enthusiasts
+            in our discussion forums. Share your own experiences, theories, and
+            questions, and connect with others who share your interest in
+            cryptids.
+          </li>
+          <li>
+            <strong>Educational Resources:</strong> Access educational
+            resources, including documentaries, podcasts, and recommended
+            reading, to expand your knowledge of cryptids and related topics.
+          </li>
+          <li>
+            <strong>Events and Conferences:</strong> Stay updated on upcoming
+            events, conferences, and conventions dedicated to cryptid research
+            and discussion. Join us in person or virtually to connect with
+            experts and fellow enthusiasts.
+          </li>
+        </ol>
+
+        <h2>Join the Journey</h2>
+        <p>
+          Whether you're a seasoned cryptid enthusiast or just beginning to
+          explore the mysteries of the unknown, Cryptid Sightings welcomes you
+          to join us on this intriguing journey. Together, let's unravel the
+          mysteries of cryptids and uncover the truth behind these enigmatic
+          creatures.
+        </p>
+      </div>
+    </div>
+
+    <script>
+      // Automatic Slideshow - change image every 4 seconds
+      var myIndex = 0;
+      carousel();
+
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {
+          myIndex = 1;
+        }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 4000);
+      }
+
+      // Used to toggle the menu on small screens when clicking on the menu button
+      function myFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+        } else {
+          x.className = x.className.replace(" w3-show", "");
+        }
+      }
+
+      // When the user clicks anywhere outside of the modal, close it
+      var modal = document.getElementById("ticketModal");
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
+  </body>
 </html>
