@@ -24,7 +24,19 @@
     />
     <script>
 function submitConfirm() {
-  alert("Your response has been successfully submitted!");
+    var name = document.getElementById("nameField").value;
+    var email = document.getElementById("email").value;
+    var subject = document.getElementById("subject").value;
+    var message = document.getElementById("message").value;
+
+    if( name === '' ||  email === '' || subject === '' || message === '')
+    {
+        alert("Please fill all fields");
+    }
+    else
+    {
+    alert("Your response has been successfully submitted!");
+    }
 }
 </script>
     <link
