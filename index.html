@@ -14,6 +14,22 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <style>
+      .w3-bar-item.active {
+        background-color: #ffffff; /* White background */
+        color: #000000; /* Black text */
+      }
+      .w3-bar-item.active:hover::before {
+        content: attr(title);
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.8);
+        color: #ffffff;
+        padding: 5px 10px;
+        border-radius: 5px;
+        bottom: calc(100% + 5px);
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 999;
+      }
       body {
         font-family: "Lato", sans-serif;
         background-color: #101010;
@@ -68,15 +84,22 @@
           title="Toggle Navigation Menu"
           ><i class="fa fa-bars"></i
         ></a>
-        <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+        <a
+          href="#"
+          class="w3-bar-item w3-button w3-padding-large active"
+          title="Go to the homepage"
+          >HOME</a
+        >
         <a
           href="./pages/database/database.html"
           class="w3-bar-item w3-button w3-padding-large w3-hide-small"
+          title="Explore the cryptid database"
           >Database</a
         >
         <a
           href="./pages/forum/forum.html"
           class="w3-bar-item w3-button w3-padding-large w3-hide-small"
+          title="Join discussions about cryptids"
           >Forums</a
         >
       </div>
