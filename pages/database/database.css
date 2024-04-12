@@ -97,5 +97,5 @@ body {
 }
 .card__img:hover,
 .card__content:hover {
-  cursor: default;
+  cursor: pointer;
 }
