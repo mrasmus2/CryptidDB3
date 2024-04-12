@@ -29,9 +29,36 @@
     <style>
       body {
         font-family: "Lato", sans-serif;
+        background-color: #101010;
       }
       .mySlides {
         display: none;
+      }
+      .w3-bar-item.active {
+        background-color: #ffffff; /* White background */
+        color: #000000; /* Black text */
+      }
+      .w3-bar-item.active:hover::before {
+        content: attr(title);
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.8);
+        color: #ffffff;
+        padding: 5px 10px;
+        border-radius: 5px;
+        bottom: calc(100% + 5px);
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 999;
+      }
+      .card {
+        background-color: #333;
+        color: #fff;
+      }
+      .card__header {
+        color: #fff;
+      }
+      .card__text {
+        color: #fff;
       }
     </style>
   </head>
@@ -50,16 +77,19 @@
         <a
           href="../../index.html"
           class="w3-bar-item w3-button w3-padding-large"
+          title="Go to the homepage"
           >HOME</a
         >
         <a
           href="./database.html"
-          class="w3-bar-item w3-button w3-padding-large w3-hide-small"
+          class="w3-bar-item w3-button w3-padding-large w3-hide-small active"
+          title="Explore the cryptid database"
           >Database</a
         >
         <a
           href="../forum/forum.html"
           class="w3-bar-item w3-button w3-padding-large w3-hide-small"
+          title="Join discussions about cryptids"
           >Forums</a
         >
       </div>
@@ -73,9 +103,9 @@
           <div class="card__content">
             <h1 class="card__header">Bigfoot</h1>
             <p class="card__text">
-              Mothman, a cryptid with large wings and glowing eyes, has been
-              sporadically sighted in Point Pleasant, West Virginia, sparking
-              curiosity and speculation about its origins and intentions.
+              Bigfoot, a legendary and elusive creature of North American
+              folklore, continues to capture the imagination of enthusiasts
+              worldwide with sporadic sightings and ambiguous evidence.
             </p>
             <a href="./bigfoot/bigfoot.html" class="card__btn"
               >Explore <span>&rarr;</span></a
@@ -92,7 +122,7 @@
             <p class="card__text">
               Mothman, a cryptid with large wings and glowing eyes, has been
               sporadically sighted in Point Pleasant, West Virginia, sparking
-              curiosity and speculation about its origins and intentions.
+              curiosity and speculation about its origins.
             </p>
             <a href="./mothman/mothman.html" class="card__btn"
               >Explore <span>&rarr;</span></a

@@ -23,22 +23,19 @@
       rel="stylesheet"
     />
     <script>
-function submitConfirm() {
-    var name = document.getElementById("nameField").value;
-    var email = document.getElementById("email").value;
-    var subject = document.getElementById("subject").value;
-    var message = document.getElementById("message").value;
+      function submitConfirm() {
+        var name = document.getElementById("nameField").value;
+        var email = document.getElementById("email").value;
+        var subject = document.getElementById("subject").value;
+        var message = document.getElementById("message").value;
 
-    if( name === '' ||  email === '' || subject === '' || message === '')
-    {
-        alert("Please fill all fields");
-    }
-    else
-    {
-    alert("Your response has been successfully submitted!");
-    }
-}
-</script>
+        if (name === "" || email === "" || subject === "" || message === "") {
+          alert("Please fill all fields");
+        } else {
+          alert("Your response has been successfully submitted!");
+        }
+      }
+    </script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -46,21 +43,27 @@ function submitConfirm() {
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
     <link rel="manifest" href="site.webmanifest" />
     <title>CryptidDB - Forum</title>
-    <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body {font-family: "Lato", sans-serif}
-.mySlides {display: none}
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lato"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
       body {
-        background-color: #141e30;
-        background: linear-gradient(
-          to right,
-          #243b55,
-          #141e30
-        ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        font-family: "Lato", sans-serif;
+        background-color: #101010;
+      }
+      .mySlides {
+        display: none;
+      }
+      body {
+        background-color: #101010;
       }
 
       form > input {
@@ -74,10 +77,25 @@ body {font-family: "Lato", sans-serif}
       .currentContact {
         color: #21edb7;
       }
+      .w3-bar-item.active {
+        background-color: #ffffff; /* White background */
+        color: #000000; /* Black text */
+      }
+      .w3-bar-item.active:hover::before {
+        content: attr(title);
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.8);
+        color: #ffffff;
+        padding: 5px 10px;
+        border-radius: 5px;
+        bottom: calc(100% + 5px);
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 999;
+      }
 
       .headerContact {
-        background-color: #141e30;
-        background: linear-gradient(to left, #243b55, #141e30);
+        background: #333;
         text-align: center;
         /* padding: 50px auto 30px auto;*/
         margin-top: 70px;
@@ -137,18 +155,38 @@ body {font-family: "Lato", sans-serif}
     <!-- Navigation Bar -->
     <div class="w3-top">
       <div class="w3-bar w3-black w3-card">
-        <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-        <a href="../../index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
-        <a href="../database/database.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Database</a>
-        <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Forums</a>
-
+        <a
+          class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right"
+          href="javascript:void(0)"
+          onclick="myFunction()"
+          title="Toggle Navigation Menu"
+          ><i class="fa fa-bars"></i
+        ></a>
+        <a
+          href="../../index.html"
+          class="w3-bar-item w3-button w3-padding-large"
+          title="Go to the homepage"
+          >HOME</a
+        >
+        <a
+          href="../database/database.html"
+          class="w3-bar-item w3-button w3-padding-large w3-hide-small"
+          title="Explore the cryptid database"
+          >Database</a
+        >
+        <a
+          href="#"
+          class="w3-bar-item w3-button w3-padding-large w3-hide-small active"
+          title="Join discussions about cryptids"
+          >Forums</a
+        >
       </div>
     </div>
     <!-- Header -->
     <div class="contactTest">
       <div class="headerContact">
         <div class="form" id="right">
-          <h2 style="color: darkgoldenrod;">SHARE YOUR STORY!</h2>
+          <h2 style="color: #fff">SHARE YOUR STORY!</h2>
           <input
             id="nameField"
             type="text"
@@ -169,7 +207,12 @@ body {font-family: "Lato", sans-serif}
             placeholder="MESSAGE"
           ></textarea>
           <div id="sendButton">
-            <button type="submit" name="submit" class="btn btn-warning" onclick="submitConfirm()">
+            <button
+              type="submit"
+              name="submit"
+              class="btn btn-warning"
+              onclick="submitConfirm()"
+            >
               SEND
             </button>
           </div>
@@ -180,7 +223,7 @@ body {font-family: "Lato", sans-serif}
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    
+
     <script
       src="https://code.jquery.com/jquery-3.5.1.js"
       integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
