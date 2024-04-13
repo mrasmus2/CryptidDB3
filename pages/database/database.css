@@ -23,6 +23,9 @@ body {
     padding: 3rem;
   }
 }
+.heading{
+  color: white;
+}
 
 .grid {
   display: grid;
