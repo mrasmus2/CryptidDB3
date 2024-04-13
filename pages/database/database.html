@@ -1,33 +1,16 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>CryptidDB - Database</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Raleway"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <style>
-      body,
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6 {
-        font-family: "Raleway", sans-serif;
-      }
-    </style>
-
-    <link rel="stylesheet" href="database.css" />
-    <style>
-      body {
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+body {
+        
         font-family: "Lato", sans-serif;
         background-color: #101010;
       }
@@ -61,101 +44,132 @@
         color: #fff;
       }
     </style>
-  </head>
-
-  <body>
-    <!-- Navbar -->
-    <div class="w3-top">
-      <div class="w3-bar w3-black w3-card">
-        <a
-          class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right"
-          href="javascript:void(0)"
-          onclick="myFunction()"
-          title="Toggle Navigation Menu"
-          ><i class="fa fa-bars"></i
-        ></a>
-        <a
-          href="../../index.html"
-          class="w3-bar-item w3-button w3-padding-large"
-          title="Go to the homepage"
-          >HOME</a
-        >
-        <a
-          href="./database.html"
-          class="w3-bar-item w3-button w3-padding-large w3-hide-small active"
-          title="Explore the cryptid database"
-          >Database</a
-        >
-        <a
-          href="../forum/forum.html"
-          class="w3-bar-item w3-button w3-padding-large w3-hide-small"
-          title="Join discussions about cryptids"
-          >Forums</a
-        >
-      </div>
+</style>
+</head>
+<body  style="max-width:1600px">
+<!-- Navbar -->
+<div class="w3-top">
+    <div class="w3-bar w3-black w3-card">
+      <a
+        class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right"
+        href="javascript:void(0)"
+        onclick="myFunction()"
+        title="Toggle Navigation Menu"
+        ><i class="fa fa-bars"></i
+      ></a>
+      <a
+        href="../../index.html"
+        class="w3-bar-item w3-button w3-padding-large active"
+        title="Go to the homepage"
+        >HOME</a
+      >
+      <a
+        href="#"
+        class="w3-bar-item w3-button w3-padding-large w3-hide-small"
+        title="Explore the cryptid database"
+        >Database</a
+      >
+      <a
+        href="../forum/forum.html"
+        class="w3-bar-item w3-button w3-padding-large w3-hide-small"
+        title="Join discussions about cryptids"
+        >Forums</a
+      >
     </div>
+  </div>
+
+  <!-- Navbar on small screens -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+<a href="../../index.html" class="w3-bar-item w3-button w3-padding-large" >HOME</a>
+<a href="#" class="w3-bar-item w3-button w3-padding-large" >Database</a>
+<a href="../forum/forum.html" class="w3-bar-item w3-button w3-padding-large" >Forums</a>
+</div>
+
     <div class="heading-container">
       <h1 class="heading">DATABASE</h1>
     </div>
 
-    <!-- !PAGE CONTENT! -->
-    <div class="grid">
-      <div class="grid__item">
-        <div class="card">
-          <a href="./bigfoot/bigfoot.html">
-          <img
-            class="card__img"
-            src="bigfoot/bigfoot0.jpeg"
-            alt="Image of the cryptid Bigfoot"
-          />
-          <div class="card__content">
-            <h1 class="card__header">Bigfoot</h1>
-            <p class="card__text">
-              Bigfoot, a legendary and elusive creature of North American
-              folklore, continues to capture the imagination of enthusiasts
-              worldwide with sporadic sightings and ambiguous evidence.
-            </p>
-            <a href="./bigfoot/bigfoot.html" class="card__btn"
-              >Explore <span>&rarr;</span></a
-            >
-          </div>
-        </div>
-      </div>
 
-      <div class="grid__item">
-        <div class="card">
-          <a href="./mothman/mothman.html">
-          <img
-            class="card__img"
-            src="mothman/mothman0.jpeg"
-            alt="Image of the cryptid Mothman"
-          />
-          <div class="card__content">
-            <h1 class="card__header">Mothman</h1>
-            <p class="card__text">
-              Mothman, a cryptid with large wings and glowing eyes, has been
-              sporadically sighted in Point Pleasant, West Virginia, sparking
-              curiosity and speculation about its origins.
-            </p>
-            <a href="./mothman/mothman.html" class="card__btn"
-              >Explore <span>&rarr;</span></a
-            >
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <script>
+    <div class="w3-main" >
+
+  
+  
+        <!-- First Photo Grid-->
+        <div class="w3-row-padding">
+          <div class="w3-half w3-container w3-margin-bottom">
+            <a href="./bigfoot/bigfoot.html">
+                <img
+                  class="card__img"
+                  src="bigfoot/bigfoot4.jpeg"
+                  alt="Image of the cryptid Bigfoot"
+                  style="width: 100%; height: 600px"
+                />
+                <div class="card__content">
+                  <h1 class="card__header">Bigfoot</h1>
+                  <p class="card__text">
+                    Bigfoot, a legendary and elusive creature of North American
+                    folklore, continues to capture the imagination of enthusiasts
+                    worldwide with sporadic sightings and ambiguous evidence.
+                  </p>
+                  <a href="./bigfoot/bigfoot.html" class="card__btn"
+                    >Explore <span>&rarr;</span></a
+                  >
+                </div>
+          </div>
+
+          <div class="w3-half w3-container w3-margin-bottom">
+            
+                <a href="./mothman/mothman.html">
+                    <img
+                      class="card__img"
+                      src="mothman/mothman0.jpeg"
+                      alt="Image of the cryptid Mothman"
+                      style="width: 100%; height: 600px"
+                    />
+                    <div class="card__content">
+                      <h1 class="card__header">Mothman</h1>
+                      <p class="card__text">
+                        Mothman, a cryptid with large wings and glowing eyes, has been
+                        sporadically sighted in Point Pleasant, West Virginia, sparking
+                        curiosity and speculation about its origins.
+                      </p>
+                      <a href="./mothman/mothman.html" class="card__btn"
+                        >Explore <span>&rarr;</span></a
+                      >
+                    </div>
+                </div>
+          </div>
+          
+        </div>
+        
+      
+      
+      
+      <!-- End page content -->
+      
+      
+      <script>
       // Script to open and close sidebar
       function w3_open() {
-        document.getElementById("mySidebar").style.display = "block";
-        document.getElementById("myOverlay").style.display = "block";
+          document.getElementById("mySidebar").style.display = "block";
+          document.getElementById("myOverlay").style.display = "block";
       }
-
+       
       function w3_close() {
-        document.getElementById("mySidebar").style.display = "none";
-        document.getElementById("myOverlay").style.display = "none";
+          document.getElementById("mySidebar").style.display = "none";
+          document.getElementById("myOverlay").style.display = "none";
       }
-    </script>
-  </body>
+      // Used to toggle the menu on small screens when clicking on the menu button
+      function myFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+        } else {
+          x.className = x.className.replace(" w3-show", "");
+        }
+      }
+      </script>
+      
+      </body>
 </html>
