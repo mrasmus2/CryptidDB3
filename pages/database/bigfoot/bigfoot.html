@@ -100,32 +100,44 @@
 
   <body>
     <!-- Navbar -->
-    <div class="w3-top">
-      <div class="w3-bar w3-black w3-card">
-        <a
-          class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right"
-          href="javascript:void(0)"
-          onclick="myFunction()"
-          title="Toggle Navigation Menu"
-          ><i class="fa fa-bars"></i
-        ></a>
-        <a
-          href="../../../index.html"
-          class="w3-bar-item w3-button w3-padding-large"
-          >HOME</a
-        >
-        <a
-          href="../../database/database.html"
-          class="w3-bar-item w3-button w3-padding-large w3-hide-small"
-          >Database</a
-        >
-        <a
-          href="../../forum/forum.html"
-          class="w3-bar-item w3-button w3-padding-large w3-hide-small"
-          >Forums</a
-        >
-      </div>
+   <div class="w3-top">
+    <div class="w3-bar w3-black w3-card">
+      <a
+        class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right"
+        href="javascript:void(0)"
+        onclick="myFunction()"
+        title="Toggle Navigation Menu"
+        ><i class="fa fa-bars"></i
+      ></a>
+      <a
+        href="../../../index.html"
+        class="w3-bar-item w3-button w3-padding-large active"
+        title="Go to the homepage"
+        >HOME</a
+      >
+      <a
+        href="../database.html"
+        class="w3-bar-item w3-button w3-padding-large w3-hide-small"
+        title="Explore the cryptid database"
+        >Database</a
+      >
+      <a
+        href="../../forum/forum.html"
+        class="w3-bar-item w3-button w3-padding-large w3-hide-small"
+        title="Join discussions about cryptids"
+        >Forums</a
+      >
     </div>
+  </div>
+
+  <!-- Navbar on small screens -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+<a href="../../../index.html" class="w3-bar-item w3-button w3-padding-large" >HOME</a>
+<a href="../database.html" class="w3-bar-item w3-button w3-padding-large" >Database</a>
+<a href="../../forum/forum.html" class="w3-bar-item w3-button w3-padding-large" >Forums</a>
+</div>
+
+
     <div class="container">
       <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <!-- Wrapper for slides -->
@@ -354,6 +366,15 @@
     </div>
 
     <script>
+      // Used to toggle the menu on small screens when clicking on the menu button
+      function myFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+        } else {
+          x.className = x.className.replace(" w3-show", "");
+        }
+      }
       $(document).ready(function () {
         $('[data-toggle="tooltip"]').tooltip();
       });
