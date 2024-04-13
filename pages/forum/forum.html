@@ -97,11 +97,13 @@
       .headerContact {
         background: #333;
         text-align: center;
-        /* padding: 50px auto 30px auto;*/
+        /* padding: 50px auto 30px auto;
+        
+        margin-left: 350px;*/
+        margin: auto;
         margin-top: 70px;
-        margin-left: 350px;
         height: 500px;
-        width: 500px;
+        width: 50%;
         border-top-right-radius: 10px;
         border-bottom-right-radius: 10px;
         border-top-left-radius: 10px;
@@ -152,36 +154,45 @@
     </style>
   </head>
   <body>
-    <!-- Navigation Bar -->
-    <div class="w3-top">
-      <div class="w3-bar w3-black w3-card">
-        <a
-          class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right"
-          href="javascript:void(0)"
-          onclick="myFunction()"
-          title="Toggle Navigation Menu"
-          ><i class="fa fa-bars"></i
-        ></a>
-        <a
-          href="../../index.html"
-          class="w3-bar-item w3-button w3-padding-large"
-          title="Go to the homepage"
-          >HOME</a
-        >
-        <a
-          href="../database/database.html"
-          class="w3-bar-item w3-button w3-padding-large w3-hide-small"
-          title="Explore the cryptid database"
-          >Database</a
-        >
-        <a
-          href="#"
-          class="w3-bar-item w3-button w3-padding-large w3-hide-small active"
-          title="Join discussions about cryptids"
-          >Forums</a
-        >
-      </div>
-    </div>
+    <!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a
+      class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right"
+      href="javascript:void(0)"
+      onclick="myFunction()"
+      title="Toggle Navigation Menu"
+      ><i class="fa fa-bars"></i
+    ></a>
+    <a
+      href="../../index.html"
+      class="w3-bar-item w3-button w3-padding-large w3-hide-small "
+      title="Go to the homepage"
+      >HOME</a
+    >
+    <a
+      href="../database/database.html"
+      class="w3-bar-item w3-button w3-padding-large w3-hide-small"
+      title="Explore the cryptid database"
+      >Database</a
+    >
+    <a
+      href="#"
+      class="w3-bar-item w3-button w3-padding-large active"
+      title="Join discussions about cryptids"
+      >Forums</a
+    >
+  </div>
+</div>
+
+<!-- Navbar on small screens -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+<a href="../../index.html" class="w3-bar-item w3-button w3-padding-large" >HOME</a>
+<a href="../database/database.html" class="w3-bar-item w3-button w3-padding-large" >Database</a>
+<a href="#" class="w3-bar-item w3-button w3-padding-large" >Forums</a>
+</div>
+
+ 
     <!-- Header -->
     <div class="contactTest">
       <div class="headerContact">
